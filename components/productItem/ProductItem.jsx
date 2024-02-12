@@ -1,6 +1,6 @@
 import Image from 'next/image'
+import "./ProductItem.css"
 import React from 'react'
-import "./productItem.css"
 
 const ProductItem = ({ name, desc, price, images, category, status, id }) => {
     return (
