@@ -1,0 +1,17 @@
+
+.popular-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    background: #fff9e1;
+}
+
+.popular-container .popular-box {
+    padding: 3rem 1rem;
+    width: 1100px;
+    border: 1px solid red;
+    display: flex;
+    gap: 1rem;
+}

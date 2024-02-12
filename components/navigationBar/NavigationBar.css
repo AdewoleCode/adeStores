@@ -1,0 +1,152 @@
+.nav_container {
+    position: relative;
+    background: #fffceb;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #d3c5c5;
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fffceb;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .wrapper {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    font-size: 13px;
+    margin: 0 1rem;
+    font-weight: 600;
+    color: #363636;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a .cart-icon {
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: #8f3f06
+}
+
+header .nav-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #8f3f06;
+    color: #fff;
+    border: none;
+    outline: none;
+    display: none;
+    opacity: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    z-index: 999;
+    margin: 0;
+}
+
+header div,
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header nav ul {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    list-style: none;
+}
+
+
+header .submenu li {
+    margin-bottom: 30px;
+}
+
+header .submenu li a:hover {
+    color: #8f3f06;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    header .nav-btn {
+        display: block;
+        font-size: 20px;
+        opacity: 1;
+        z-index: 999;
+    }
+
+    .user-box {
+        display: none;
+    }
+
+    header {
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+    }
+
+    .nav_title {
+        width: 60px;
+        height: 50px;
+        object-fit: cover;
+        z-index: 9999;
+    }
+
+    header nav {
+        position: fixed;
+        top: 5rem;
+        padding: 3rem 0.5rem;
+        left: 0;
+        height: 100%;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 3rem;
+        background-color: white;
+        color: black;
+        transition: 1s;
+        transform: translateX(-150vh);
+    }
+
+    .homee {
+        display: block;
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 1.5rem;
+        padding: 0.3rem 0.5rem 0.1rem 0.5rem;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 5rem;
+    }
+}
